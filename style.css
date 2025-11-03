@@ -242,6 +242,44 @@ h2 {
   margin-right: 8px;
 }
 
+/* Technical Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.skill-card {
+  background: rgba(255,255,255,0.9);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15,23,42,0.12);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  color: #2563eb;
+  margin-bottom: 0.6rem;
+}
+
+.skill-card h4 {
+  margin-bottom: 0.4rem;
+  color: #0f172a;
+}
+
+.skill-card p {
+  color: #334155;
+  font-size: 0.95rem;
+}
+
 /* Footer */
 footer {
   text-align: center;
